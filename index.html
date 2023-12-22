@@ -9,7 +9,7 @@
             padding: 0;
             display: flex;
             color: #f1f1f1; /* Light text color */
-            background-color: 	#1e453e; /* Dark background */
+            background-color: 	#121212; /* Dark background */
         }
         .sidebar {
             width: 200px;
@@ -31,29 +31,45 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        .menu-bar {
+         /* Updated menu bar styles */
+         .menu-bar {
             background-color: #046276; /* Dark menu bar */
-            overflow: hidden;
+            display: flex; /* Use flexbox for better alignment */
+            align-items: stretch; /* Stretch items to fill the container */
         }
+
+        /* Updated link styles */
         .menu-bar a {
-            float: left;
-            display: block;
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            flex-grow: 1; /* Allow each link to grow */
             color: white; /* Light text in menu bar */
-            text-align: center;
-            padding: 14px 16px;
+            padding: 0 16px; /* Horizontal padding, no vertical padding */
             text-decoration: none;
+            box-sizing: border-box; /* Include padding in width calculation */
         }
+
+        /* Hover effect */
         .menu-bar a:hover {
             background-color: #06768d; /* Lighter color on hover */
             color: white;
         }
+
+        /* Social icons */
         .social-icons {
-            float: right;
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center vertically */
         }
         .social-icons a {
             display: inline-block;
             padding: 14px 16px;
         }
+
+        .social-icons a:hover {
+            width: auto;
+        }
+
         .social-icons img {
             width: 20px;
             height: 20px;
@@ -71,12 +87,14 @@
         .body-content p {
             margin-top: 10px;
         }
+
+        
     </style>
 </head>
 <body>
 
 <div class="sidebar">
-    <img src="your-photo.png" alt="Tommy Naugle">
+    <img src="pfp.png" alt="Tommy Naugle">
 </div>
 
 <div class="content">
